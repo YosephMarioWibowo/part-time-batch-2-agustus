@@ -1,0 +1,191 @@
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 16px;
+  width: 12.5%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: left;
+}
+
+#Home {background-color:red;}
+#About {background-color:green;}
+#Products {background-color:blueviolet;}
+#News {background-color:orangered;}
+#Contact {background-color:mediumvioletred;}
+#Form {background-color:cornflowerblue;}
+#Daftarkaryawan {background-color:yellowgreen;}
+#Daftardivisi {background-color:black;}
+
+table,tr,th,td{
+  border: 1px solid black;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.product {
+  float: left;
+  width: 25%;
+}
+
+.product-icon {
+  position: relative;
+}
+
+.product-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: black;
+}
+
+.product-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://i.pinimg.com/originals/33/0f/a1/330fa1faff366913777c4303bcc12556.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+div
+{
+    border-radius: 5px;
+    }
+
+a:hover {
+    font-weight: bold;
+}
+
+.right
+{
+    float: left;
+    margin-top: 50px;
+    padding-left:5px;
+    height: auto;
+    width: 99%;
+    background-color:rgb(39, 39, 39);
+    }
+    
+h3
+{
+    text-decoration: underline;
+    }
+
+#job-responsibilities
+{
+    padding: 1px;
+    }
+.job-title
+{
+    font-weight: bold;
+    }
+table
+{
+    border: 1px dashed black;
+    }
+td
+{
+    padding: 2px;
+    border: 1px solid #E88741;
+    }
+
+#course-name
+{
+    font-weight:bold;
+    }
+
+#company-name
+{
+    height:2px;
+    text-decoration:underline;
+    }
+#job-title
+{
+    height: 5px;
+    }
+.job-duration
+{
+    float:right;
+    }
+#heading
+{
+    font-weight:bold;
+    }

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 | Yoseph Mario Wibowo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+      <button class="tablink" onclick="changePageTo('Home', this, 'red')" id="defaultOpen">Home</button>
+      <button class="tablink" onclick="changePageTo('About', this, 'green')">About</button>
+      <button class="tablink" onclick="changePageTo('Products', this, 'blueviolet')">Products</button>
+      <button class="tablink" onclick="changePageTo('News', this, 'orangered')">News</button>
+      <button class="tablink" onclick="changePageTo('Contact', this, 'mediumvioletred')">Contact</button>
+      <button class="tablink" onclick="changePageTo('Form', this, 'cornflowerblue')">Registration Form</button>
+      <button class="tablink" onclick="changePageTo('Daftarkaryawan', this, 'yellowgreen')">Employee List</button>
+      <button class="tablink" onclick="changePageTo('Daftardivisi', this, 'black')">Division List</button>
+
+    <div id="Home" class="tabcontent">
+        <h1>Home</h1>
+        <p>Welcome to this page. This page is about this page.</p>
+        <div class="top-wrapper">
+          <div class="container">
+            <h1>WELCOME TO WHYTECH.INC</h1>
+            <p>We provide your printing packaging machines needs.</p>
+            <p>This is official website of WHYTECH.INC</p>
+          </div>
+        </div>
+
+    </div>
+     
+    <div id="About" class="tabcontent">
+        <h1>About</h1>
+        <p>This page contained my CV</p>
+        <div class="right">
+          <h3>Personality:</h3>
+          <p>
+          <ul>
+              <li>Strength : High will to learn, Cooperative, Multitasking.</li>
+              <li>Weakness : Not good at doing target marketing & sales, Not good at debating, Semi skilled.</li>
+              <li>Trait : Passionate, Critical, Curious.</li>
+          </ul>
+          </p>
+          <h3>Professional Experience</h3>
+          <h4 id="company-name">AR Packaging Indonesia</h4>
+          <p id="job-title"><strong>Maintenance Supervisor</strong></p>
+          <p id="job-responsibilities">Job Responsbilities</p>
+          <p>
+          <ul>
+              <li>Implement efficient system in maintenance department such as periodic maintenance, machines repairment, spare parts management, budgeting, work safety standard, and also maintain machines performance.</li>
+              <li>Support and lead maintenance technicians.</li>
+              <li>Support and supervise projects (machines installation, buidling reparation, and audit preparation such as SEDEX, SWA,  ISO 14001, ISO 9001, ISO 19011</li>
+          </ul>
+          </p>
+          <h3>Education</h3>
+          <table>
+              <tr id="heading">
+                  <td>Qualification</td>
+                  <td>Institution</td>
+                  <td>Year</td>
+              </tr>
+              <tr>
+                  <td>Bachelor of Applied Science - BASc - Electrical Engineering</td>
+                  <td>State Polytechnic of Malang</td>
+                  <td>2011 - 2015</td>
+              </tr>
+              <tr>
+                  <td>High School - Science</td>
+                  <td>Saint Joseph High School Malang</td>
+                  <td>2008 - 2011</td>
+              </tr>
+          </table>
+          <h3>Course</h3>
+          <p>
+          <ul>
+              <li>
+              <span id="course-name">Fullstack (Java - React Native)</span> – G2 Academy_2020</li>
+          </ul>
+          <h3>Technical Skills</h3>
+          <p>
+          <ul>
+              <li>
+              <span id="course-name">Mechanical:</span>Pneumatic, Hydrolic</li>
+              <li>
+              <span id="course-name">Electrical:</span>PLC, Wiring Diagram, Installation</li>
+              <li>
+              <span id="course-name">Machineries:</span>Printing Packaging, Utilities</li></ul>
+          </p>
+   </div>
+    </div>
+
+    <div id="Products" class="tabcontent">
+        <h1>Products</h1>
+        <p>This page contained our products.</p>
+        <div class="product-wrapper">
+            <div class="container">
+              <div class="heading">
+              </div>
+              <div class="products">
+                <div class="product">
+                  <div class="product-icon">
+                    <img src="https://pbs.twimg.com/profile_images/638465852459782144/W5DLdtew_400x400.jpg">
+                  </div>
+                  <p>Electrical & Mechanical Spareparts</p>
+                  <p class="txt-contents">Variant electrical and mechanical spareparts</p>
+                </div>
+                <div class="product">
+                  <div class="product-icon">
+                    <img src="https://tprc-2018.s3.amazonaws.com/site-media/Timeline/_image256x256/spring16.png?mtime=20190604105948&focal=none&tmtime=20190604111707">  
+                  </div>
+                  <p>Electrical & Mechanical Installation</p>
+                  <p class="txt-contents">Installation service from scratch to finish</p>
+                </div>
+                <div class="product">
+                  <div class="product-icon">
+                    <img src="https://www.plumbingutah.com/wp-content/uploads/2019/11/home-furnace-maintenance-inspection-256x256.jpg">
+                  </div>
+                  <p>Electrical & Mechanical Maintenance</p>
+                  <p class="txt-contents">Service for maintaining your equipment perfomances.</p>
+                </div>
+                <div class="product">
+                  <div class="product-icon">
+                    <img src="https://www.spmswiss.com/wp-content/uploads/2020/06/career_blog_spm-3-1-thegem-post-thumb-large.png">
+                  </div>
+                  <p>Electrical & Mechanical Consultation</p>
+                  <p class="txt-contents">Consultation if you found any difficulties.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div id="News" class="tabcontent">
+        <h1>News</h1>
+        <p>This page contained news.</p>
+        <iframe src="https://www.globalspec.com/" height="500px" width="1250px"></iframe>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h1>Contact</h1>
+        <p>This page contained our contact.</p>
+        <div class="btn-wrapper">
+            <a href="#" class="btn signup">Contact us with Email</a>
+            <p>or</p>
+            <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Contact us with Facebook</a>
+            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Contact us with Twitter</a>
+          </div>
+    </div>
+
+    <div id="Form" class="tabcontent">
+        <h1>Registration Form</h1>
+        <p>This page contained registration form.</p> 
+        <form>
+            <label for="name">Name : </label><br/>
+            <input id="name" type="text" placeholder="input your name"/>
+            <br/><br/>
+
+            <label for="email">Email : </label><br/>
+            <input id="email" type="email" placeholder="input your email"/>
+            <br/><br/>
+
+            <label for="password">Password : </label><br/>
+            <input id="password" type="password" placeholder="input your password"/>
+            <br/><br/>
+
+            <label for="age">Age : </label><br/>
+            <input id="age" type="number" placeholder="input your age"/>
+            <br/><br/>
+
+            <label for="date">Birthday : </label><br/>
+            <input id="date" type="date" placeholder="input your birthday"/>
+            <br/><br/>
+            
+            <label>Education</label><br/>
+            <input type="checkbox" id="education1" name="education1" value="Elementary">
+            <label for="education1"> Elementary school</label><br>
+            <input type="checkbox" id="education2" name="education2" value="Middle">
+            <label for="education2"> Middle school</label><br>
+            <input type="checkbox" id="education3" name="education3" value="High">
+            <label for="education3"> High school</label><br>
+            <input type="checkbox" id="education4" name="education4" value="Diploma">
+            <label for="education4"> Diploma</label><br>
+            <input type="checkbox" id="education5" name="education5" value="Bachelor">
+            <label for="education5"> Bachelor degree</label><br>
+            <input type="checkbox" id="education6" name="education6" value="Master">
+            <label for="education6"> Master degree</label><br>
+            <input type="checkbox" id="education7" name="education7" value="Doctoral">
+            <label for="education7"> Doctoral degree</label><br>
+            <input type="checkbox" id="education8" name="education8" value="Other">
+            <label for="education8"> Other</label><br>
+            <br/><br/>
+        
+            <label>Gender</label><br/>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br/><br/>
+
+            <label for="division">Choose for division:</label>
+            <select name="division id="division>
+            <option value="Production">Production</option>
+            <option value="Marketing">Marketing</option>
+            <option value="PPIC">PPIC</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Purchasing">Purchasing</option>
+            <option value="Maintenance">Maintenance</option>
+            <option value="HRGA">HRGA</option>
+            <option value="EDP">EDP</option>
+            </select>
+            <br/><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="Daftarkaryawan" class="tabcontent">
+        <h1>Employee List</h1>
+        <p>This page contained our employee list.</p>
+        <input id="myInputKaryawan" type="text" style="margin-bottom: 10px;" oninput="filterTablekaryawan(event)">
+        <input type="button" id="searchTableKaryawan" type="submit" value="Cari" oninput="filterTablekaryawan(event)">
+        <table id="myTableKaryawan">
+            <thead>
+                <tr class="header">
+                  <th>Name</th>
+                  <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>Yoseph Mario Wibowo</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>Huma Nicholls</td>
+                  <td>37</td>
+                </tr>
+                <tr>
+                  <td>Millicent Horner</td>
+                  <td>72</td>
+                </tr>
+                <tr>
+                  <td>Shah Whitworth</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Zander Bryan</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Mariella Archer</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>Tiffany Carter</td>
+                  <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="Daftardivisi" class="tabcontent">
+        <h1>Division List</h1>
+        <p>This page contained our division list.</p>
+        
+        <input id="myInputDivisi" type="text" style="margin-bottom: 10px;" oninput="filterTabledivisi(event)">
+        <input type="button" id="searchTableDivisi" type="submit" value="Cari" oninput="filterTabledivisi(event)">
+        <table id="myTableDivisi">
+            <thead>
+                <tr class="header">
+                  <th>No</th>
+                  <th>Division Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Production</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Marketing</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PPIC</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Accounting</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Purchasing</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Maintenance</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>HRGA</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>EDP</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
