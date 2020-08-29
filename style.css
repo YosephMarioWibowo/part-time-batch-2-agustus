@@ -1,0 +1,124 @@
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 16px;
+    width: 16.66%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 20px;
+    text-align: left;
+  }
+
+  #Stock {background-color:whitesmoke;}
+  #Member {background-color:whitesmoke;}
+  #SalesHistory {background-color:whitesmoke;}
+  #Cashier {background-color:whitesmoke;}
+  #Profit {background-color:whitesmoke;}
+  #StockOpname {background-color:whitesmoke;}
+
+.form-add {
+    width: 25.3%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+.form-select {
+    width: 25%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+.form-filterstock{
+    position: absolute;
+    right: 50px;
+    width: 25.3%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 34%;
+    background-color: #396a94;
+    color: white;
+    padding: 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #5bc0de;
+}
+
+.btn-reset {
+    width: 49.8%;
+    height: 150px;
+    background-color: rgb(204, 19, 19);;
+    color: white;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background-color: #f5554a;
+}
+
+.box {
+    border-radius: 5px;
+    background-color: rgb(216, 214, 214);
+    padding: 10px 20px 20px 20px;
+    border: 1px solid black;
+    margin-top: 45px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+table td, table th{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {background-color: rgba(255, 255, 255, 0.76);}
+
+table tr:hover {background-color: wheat;}
+
+table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color:rgb(179, 179, 230);
+    color: black;
+    border: 1px solid white;
+}
+
+label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}

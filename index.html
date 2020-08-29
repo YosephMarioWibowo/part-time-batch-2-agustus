@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 | Cashier | Yoseph Mario Wibowo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="tablink" onclick="changePageTo('Stock', this, 'grey')" id="defaultOpen">Stock</button>
+    <button class="tablink" onclick="changePageTo('Member', this, 'grey')">Member</button>
+    <button class="tablink" onclick="changePageTo('SalesHistory', this, 'grey')">Sales History</button>
+    <button class="tablink" onclick="changePageTo('Cashier', this, 'grey')">Cashier</button>
+    <button class="tablink" onclick="changePageTo('Profit', this, 'grey')">Profit</button>
+    <button class="tablink" onclick="changePageTo('StockOpname', this, 'grey')">Stock Opname</button>
+
+    <div id="Stock" class="tabcontent">
+        <div class="box">
+            <form>
+                <label>Product ID </label><input id="input-productid" name="productid" class="form-add" type="text" placeholder="Please input product ID..."/><br/>
+                <label>Product Name </label><input id="input-productname" name="productname" class="form-add" type="text" placeholder="Please input product name..."/><br/>
+                <label>Stock Amount</label><input id="input-stockamount" name="stockamount" class="form-add" type="number" placeholder="Please input stock amount..."/><br/>
+                <label>Price/item </label><input id="input-priceperitem" name="priceperitem" class="form-add" type="number" placeholder="Please input price/item..."/><br/>
+                <label>Discount (%) </label><input id="input-discount" name="discount" class="form-add" type="number" placeholder="Please input discount (%)..."/><label></label><br/>
+                <label>Category</label>
+                <select id="input-category" name="category" class="form-select">
+                    <option value="">-- Select Category --</option>
+                    <option value="Food">Food</option>
+                    <option value="Beverage">Beverage</option>
+                </select><br/>  
+            </form>
+            <button class="btn-submit" onclick="submitStock()">Submit</button>
+            <input id="input-filterstock" name="filterstock" class="form-filterstock" type="text" oninput="filterStock(event)" placeholder="Please input your filter keyword..."/><br/>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Stock Amount</th>
+                            <th>Price/item</th>
+                            <th>Discount (%)</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="output-tablestock">
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="Cashier" class="tabcontent">
+        <div class="box">
+            <form>
+                <label>Product ID</label><input id="input-productidreceipt" name="productidreceipt" class="form-add" type="text" placeholder="Please input product ID..."/><br/>
+                <label>Quantity</label><input id="input-quantityreceipt" name="quantityreceipt" class="form-add" type="number" placeholder="Please input stock amount..."/><br/>
+            </form>
+            <button class="btn-submit" onclick="submitReceipt()">Submit</button>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Price/item</th>
+                            <th>Discount (%)</th>
+                            <th>Total</th>
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="output-receipt">
+            
+                    </tbody>
+                </table> 
+            </div>
+            <form>
+                <label>ID Member</label><input id="input-member" name="member" class="form-add" type="text" placeholder="Please input ID member..."/><br/>
+            </form>
+            <tbody id="output-grandtotal">
+            </tbody>
+            <button class="btn-submit" onclick="printReceipt()">Paid & Print Receipt</button>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
