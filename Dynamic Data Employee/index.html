@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2 | Employee Data | Yoseph Mario Wibowo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h3>EMPLOYEE DATA</h3>
+    <label>Name</label><input id="input-name" name="name" class="form-add" type="text" placeholder="Please input your name..." /><br/>
+    <label>Age</label><input id="input-age" name="age" class="form-add" type="number" placeholder="Please input your age..." /><br/>
+    <label>Email</label><input id="input-email" name="email" class="form-add" type="email" placeholder="Please input your email..." /><br/>       
+    <label>Education</label><input id="input-education" name="education" class="form-add" type="text" placeholder="Please input your education..." /><br/>
+    <label>Gender</label><input id="input-gender" name="gender" class="form-add" type="text" placeholder="Please input your gender..." /><br/>
+    <label>Division</label><input id="input-division" name="division" class="form-add" type="text" placeholder="Please input your division..." /><br/>
+    <!--<label>Gender</label>
+      <input type="radio" id="input-male" name="input-gender" value="male"><label for="male">Male</label>
+      <input type="radio" id="input-female" name="input-gender" value="female"><label for="female">Female</label><br/>
+    <label>Division</label>
+      <select id="input-division" name="division">
+      <option value="Production">Production</option>
+      <option value="Marketing">Marketing</option>
+      <option value="PPIC">PPIC</option>
+      <option value="Accounting">Accounting</option>
+      <option value="Purchasing">Purchasing</option>
+      <option value="Maintenance">Maintenance</option>
+      <option value="HRGA">HRGA</option>
+      <option value="EDP">EDP</option>
+    </select><br/>  -->   
+    <button class="btn-add" onclick="add()">Add</button>
+    <table id="table">
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!--document.querySelectorAll("input[name='input-gender']")[0].checked-->
+<!--document.querySelector("select#input-division").value-->

@@ -1,0 +1,84 @@
+.form-add {
+    width: 25%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+.btn-add {
+    width: 33.5%;
+    background-color: #396a94;
+    color: white;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background-color: #5bc0de;
+}
+
+.btn-edit {
+    background-color: orange;
+    color: black;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background-color: #f1b55f;
+}
+
+.btn-discard {
+    background-color: red;;
+    color: white;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-discard:hover {
+    background-color: #f5554a;
+}
+
+.box {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 0px 20px 20px 20px;
+    border: 1px solid black;
+}
+
+#table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+#table td, #tabel th {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#table tr:nth-child(even){background-color: white;}
+
+#table tr:hover {background-color: wheat;}
+
+#table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color:rgb(179, 179, 230);
+    color: black;
+}
+
+label{
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
