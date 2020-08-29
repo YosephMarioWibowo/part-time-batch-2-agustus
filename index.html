@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 | Parking Ticket | Yoseph Mario Wibowo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="tablink" onclick="changePageTo('GateIn', this, 'grey')" id="defaultOpen">Gate In</button>
+    <button class="tablink" onclick="changePageTo('GateOut', this, 'grey')">Gate Out</button>
+
+    <div id="GateIn" class="tabcontent">
+        <div class="box">
+            <div>
+                <button class="btn-count" onclick="ticketCount()">Get Ticket</button>    
+                <button class="btn-reset" onclick="ticketReset()">Reset</button>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket Number</th>
+                            <th>Time In</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablein">
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="GateOut" class="tabcontent">
+        <div class="box">
+            <form>
+                <label>Ticket Number</label><input id="input-ticketnumber" name="ticketnumber" class="form-add" type="tel" placeholder="Please input ticket number..."/><br/>
+                <label>Vehicle</label>
+                <select id="input-vehicle" name="vehicle" class="form-select">
+                    <option value="Motorcycle">Motorcycle</option>
+                    <option value="Car">Car</option>
+                </select><br/>  
+                <label>Plate Number</label><input id="input-platenumber" name="platenumber" class="form-add" type="text" placeholder="Please input plate number..."/><br/>
+            </form>
+            <button class="btn-count" onclick="calculate()">Calculate</button>
+            <button class="btn-reset" onclick="paidReset()">Reset</button>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket Number</th>
+                            <th>Vehicle</th>
+                            <th>Plate Number</th>
+                            <th>Time In</th>
+                            <th>Time Out</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableout">
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
