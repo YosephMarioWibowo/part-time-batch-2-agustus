@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 | Employee Data | Yoseph Mario Wibowo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="tablink" onclick="changePageTo('Login', this, 'grey')" id="defaultOpen">Login</button>
+    <button class="tablink" onclick="changePageTo('EmployeeInput', this, 'grey')">Employee Input</button>
+    <button class="tablink" onclick="changePageTo('EmployeeList', this, 'grey')">Employee List</button>
+    <button class="tablink" onclick="changePageTo('DivisionInput', this, 'grey')">Division Input</button>
+    <button class="tablink" onclick="changePageTo('DivisionList', this, 'grey')">Division List</button>
+    <button class="tablink" onclick="changePageTo('DivisionAssignment', this, 'grey')">Division Assignment</button>
+
+    <div id="Login" class="tabcontent">
+        <div class="box">
+            <form>
+                <label>Username</label><input id="input-username" name="username" class="form-add" type="text" placeholder="Please input your username..."/><br/>
+                <label>Password</label><input id="input-password" name="password" class="form-add" type="password" placeholder="Please input your password..."/><br/>
+            </form>
+            <button class="btn-add" onclick="">Login</button>
+        </div>
+    </div>
+
+    <div id="EmployeeInput" class="tabcontent">
+        <div class="box">
+            <form>
+                <label>NIK</label><input id="input-nik" name="nik" class="form-add" type="tel" placeholder="Please input your NIK number..."/><br/>
+                <label>Name</label><input id="input-name" name="name" class="form-add" type="text" placeholder="Please input your name..."/><br/>
+                <label>Placebirth</label><input id="input-placebirth" name="placebirth" class="form-add" type="text" placeholder="Please input your placebirth..."/><br/>
+                <label>Birthday</label><input id="input-birthday" name="birthday" class="form-add" type="date"/><br/>
+                <label>Gender</label><input id="input-gender" name="gender" class="form-add" type="text" placeholder="Please input your gender..."/>
+                <label>Bloodtype</label><input id="input-bloodtype" name="bloodtype" class="form-add" type="text" placeholder="Please input your bloodtype..."/><br/>
+                <label>Address</label><input id="input-address" name="address" class="form-add" type="" placeholder="Please input your address..."/><br/>
+                <label>RT</label><input id="input-rt" name="rt" class="form-add" type="number"/>
+                <label>RW</label><input id="input-rw" name="rw" class="form-add" type="number"/><br/>
+                <label>Urban Village</label><input id="input-urbanvillage" name="urbanvillage" class="form-add" type="text" placeholder="Please input your urban village..."/><br/>
+                <label>Sub-District</label><input id="input-subdistrict" name="subdistrict" class="form-add" type="text" placeholder="Please input your sub-district..."/><br/>
+                <label>Religion</label><input id="input-religion" name="religion" class="form-add" type="text" placeholder="Please input your religion..."/><br/>
+                <label>Marital Status</label><input id="input-maritalstatus" name="maritalstatus" class="form-add" type="text" placeholder="Please input your marital status..."/><br/>
+                <label>Proffesion</label><input id="input-profession" name="profession" class="form-add" type="text" placeholder="Please input your profession..."/><br/>
+                <label>Nationality</label><input id="input-nationality" name="nationality" class="form-add" type="text" placeholder="Please input your nationality..."/><br/>
+                <label>Division</label>
+                <select id="input-division" name="division">
+                    <!--<option value="Production">Production</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="PPIC">PPIC</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Purchasing">Purchasing</option>
+                    <option value="Maintenance">Maintenance</option>
+                    <option value="HRGA">HRGA</option>
+                    <option value="EDP">EDP</option>-->
+                </select><br/>  
+            </form>
+            <button class="btn-add" onclick="saveData()">Input</button>
+        </div>
+    </div>
+
+
+    <div id="EmployeeList" class="tabcontent">
+        <div class="box">
+            <table id="table"></table>
+        </div>
+    </div>
+
+    <div id="DivisionInput" class="tabcontent">
+        <div class="box">
+            <form>
+                <label>New Division</label><input id="input-newdivision" name="newdivision" class="form-add" type="text" placeholder="Please input new division..."/><br/>
+            </form>
+            <button class="btn-add" onclick="adddivision()">Add Division</button>
+        </div>
+    </div>
+
+    <div id="DivisionList" class="tabcontent">
+        <div class="box">
+            <form>
+                <select id="selectdivisionlist">
+                    <option value="Production">Production</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="PPIC">PPIC</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Purchasing">Purchasing</option>
+                    <option value="Maintenance">Maintenance</option>
+                    <option value="HRGA">HRGA</option>
+                    <option value="EDP">EDP</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="DivisionAssignment" class="tabcontent">
+        <div class="box">
+            <table id="tabledivision"></table>
+        </div>
+    </div>
+
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
