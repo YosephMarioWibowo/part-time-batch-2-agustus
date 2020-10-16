@@ -1,0 +1,145 @@
+.form-add {
+  width: 25.3%;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: 1px solid whitesmoke;
+  box-sizing: border-box;
+}
+
+.form-select {
+  width: 25%;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border: 1px solid whitesmoke;
+  box-sizing: border-box;
+}
+
+.btn-countmotor {
+  width: 30%;
+  height: 100px;
+  background-color: #396a94;
+  color: white;
+  padding: 5px 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 130px;  
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn-countcar {
+  width: 30%;
+  height: 100px;
+  background-color: #396a94;
+  color: white;
+  padding: 5px 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 250px;  
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn-countmotor:hover, .btn-countcar:hover {
+  background-color: #5bc0de;
+}
+
+.btn-calculate {
+  width: 100%;
+  height: 75px;
+  background-color: #396a94;
+  color: white;
+  padding: 5px 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn-calculate:hover {
+  background-color: #5bc0de;
+}
+
+.btn-reset {
+  width: 5%;
+  height: 30px;
+  background-color: rgb(204, 19, 19);;
+  color: white;
+  padding: 5px 5px;
+  margin-top: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  background-color: #f5554a;
+}
+
+.boxin {
+  border-radius: 5px;
+  background-color: rgb(141, 179, 164);
+  padding: 10px 20px 20px 20px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.boxout {
+  border-radius: 5px;
+  background-color: rgb(208, 182, 214);
+  padding: 10px 20px 20px 20px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+table{
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+table td, table th{
+  border: 1px solid white;
+  padding: 5px;
+}
+
+table tr:nth-child(even) {background-color: rgba(255, 255, 255, 0.76);}
+
+table tr:hover {background-color: wheat;}
+
+table th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color:rgb(179, 179, 230);
+  color: black;
+  border: 1px solid white;
+}
+
+label{
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.GateIn {
+  padding: 10px;
+  text-align: center;
+  background: #495f5b;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.GateOut {
+  padding: 10px;
+  text-align: center;
+  background: #5b3a6e;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
