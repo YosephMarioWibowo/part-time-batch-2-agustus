@@ -1,0 +1,8 @@
+create table authors (id bigint not null auto_increment, created datetime, created_by varchar(255), last_modified datetime, last_modified_by varchar(255), address varchar(255), email varchar(255), first_name varchar(255), last_name varchar(255), url varchar(255), primary key (id)) engine=InnoDB;
+create table authors_audit (id bigint not null, rev integer not null, revtype tinyint, address varchar(255), email varchar(255), first_name varchar(255), last_name varchar(255), url varchar(255), primary key (id, rev)) engine=InnoDB;
+create table books (id bigint not null auto_increment, created datetime, created_by varchar(255), last_modified datetime, last_modified_by varchar(255), isbn varchar(20), price double precision, published_on mediumint, title varchar(255), author_id bigint not null, primary key (id)) engine=InnoDB;
+create table books_audit (id bigint not null, rev integer not null, revtype tinyint, isbn varchar(20), price double precision, published_on mediumint, title varchar(255), author_id bigint, primary key (id, rev)) engine=InnoDB;
+create table revinfo (rev integer not null auto_increment, revtstmp bigint, primary key (rev)) engine=InnoDB;
+alter table authors_audit add constraint FK4h9eexvqe2tf95cot5h3lmj2f foreign key (rev) references revinfo (rev);
+alter table books add constraint FKfjixh2vym2cvfj3ufxj91jem7 foreign key (author_id) references authors (id);
+alter table books_audit add constraint FKfyfj7ys56hvrijh5f6uklakbl foreign key (rev) references revinfo (rev);

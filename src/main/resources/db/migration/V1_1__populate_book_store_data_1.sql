@@ -1,0 +1,21 @@
+INSERT INTO authors (id,created, created_by, address, email, first_name, last_name, url) VALUES (1, '2020-11-01', 'System Migrator', 'Address Author 1', 'author1@gmail.com', 'Rifky', 'Last Name 1', '');
+INSERT INTO authors (id,created, created_by, address, email, first_name, last_name, url) VALUES (2, '2020-11-01', 'System Migrator', 'Address Author 2', 'author2@gmail.com', 'Author 2', 'Last Name 2', '');
+INSERT INTO authors (id,created, created_by, address, email, first_name, last_name, url) VALUES (3, '2020-11-01', 'System Migrator', 'Address Author 3', 'author3@gmail.com', 'Author 3', 'Last Name 3', '');
+INSERT INTO authors (id,created, created_by, address, email, first_name, last_name, url) VALUES (4, '2020-11-01', 'System Migrator', 'Address Author 4', 'author4@gmail.com', 'Author 4', 'Last Name 4', '');
+INSERT INTO authors (id,created, created_by, address, email, first_name, last_name, url) VALUES (5, '2020-11-01', 'System Migrator', 'Address Author 5', 'author5@gmail.com', 'Author 5', 'Last Name 5', '');
+
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (1, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 1 Book 1', 'isbn-b01', 1);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (2, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 1 Book 2', 'isbn-b02', 1);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (3, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 1 Book 3', 'isbn-b03', 1);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (4, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 2 Book 1', 'isbn-b04', 2);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (5, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 2 Book 2', 'isbn-b05', 2);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (6, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 2 Book 3', 'isbn-b06', 2);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (7, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 3 Book 1', 'isbn-b07', 3);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (8, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 3 Book 2', 'isbn-b08', 3);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (9, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 3 Book 3', 'isbn-b09', 3);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (10, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 4 Book 1', 'isbn-b10', 4);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (11, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 4 Book 2', 'isbn-b11', 4);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (12, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 4 Book 3', 'isbn-b12', 4);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (13, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 5 Book 1', 'isbn-b13', 5);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (14, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 5 Book 2', 'isbn-b14', 5);
+INSERT INTO books (id, created, created_by, price, published_on, title, isbn, author_id) VALUES (15, '2020-11-01', 'System Migrator', 100.0, 201001, 'Author 5 Book 3', 'isbn-b15', 5);
